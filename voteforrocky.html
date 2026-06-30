@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Walter "Rocky" Beach for U.S. House — Louisiana's 2nd District</title>
+<meta name="description" content="Walter 'Rocky' Beach for U.S. House of Representatives, Louisiana's 2nd Congressional District. A first responder for Congress. Reform. Accountability. Results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0E2A5C;
+    --navy-deep:#081A3A;
+    --navy-line:#1B3D78;
+    --red:#C8102E;
+    --red-bright:#E11E36;
+    --cream:#F5F3EC;
+    --paper:#FBFAF5;
+    --gold:#E6B23C;
+    --ink:#16213D;
+    --muted:#5C6A86;
+    --star:rgba(255,255,255,.9);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  .anton{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.01em}
+  .oswald{font-family:'Oswald',sans-serif}
+
+  /* ── Top stripe ───────────────────────────── */
+  .topbar{
+    background:var(--red);
+    color:#fff;
+    font-family:'Oswald',sans-serif;
+    font-weight:600;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    font-size:.72rem;
+    text-align:center;
+    padding:9px 16px;
+    display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;
+  }
+  .topbar .star{color:var(--gold)}
+
+  /* ── Hero ─────────────────────────────────── */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(120% 90% at 50% -10%, #14336e 0%, rgba(20,51,110,0) 55%),
+      linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color:#fff;
+    text-align:center;
+    padding:54px 22px 64px;
+    overflow:hidden;
+  }
+  .stars{position:absolute;inset:0;z-index:0;opacity:.55}
+  .stars span{position:absolute;color:var(--star);font-size:10px;animation:tw 5s ease-in-out infinite}
+  @keyframes tw{0%,100%{opacity:.2}50%{opacity:.85}}
+
+  .hero-inner{position:relative;z-index:1;max-width:920px;margin:0 auto}
+
+  .kicker{
+    font-family:'Oswald',sans-serif;font-weight:500;
+    letter-spacing:.34em;text-transform:uppercase;
+    font-size:.74rem;color:var(--gold);margin-bottom:18px;
+  }
+  .name{
+    line-height:.86;
+    text-transform:uppercase;
+  }
+  .name .l1,.name .l3{font-size:clamp(2.8rem,11vw,6.4rem);color:#fff;display:block}
+  .name .l2{
+    font-size:clamp(3.6rem,15vw,8.6rem);
+    color:var(--red-bright);
+    display:block;
+    text-shadow:0 2px 0 rgba(0,0,0,.25);
+  }
+  .name .q{color:#fff;-webkit-text-stroke:0}
+
+  .divider{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    margin:22px auto 16px;max-width:520px;
+  }
+  .divider .rule{height:2px;background:var(--red);flex:1}
+  .divider .for{
+    font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.3em;
+    font-size:.8rem;color:#fff;text-transform:uppercase;
+  }
+  .divider .s{color:var(--gold);font-size:.7rem;letter-spacing:.2em}
+
+  .office{
+    font-family:'Oswald',sans-serif;font-weight:700;
+    font-size:clamp(1.5rem,5vw,2.6rem);
+    text-transform:uppercase;line-height:1.04;letter-spacing:.01em;
+  }
+  .district{
+    font-family:'Oswald',sans-serif;font-weight:600;
+    color:var(--red-bright);text-transform:uppercase;
+    letter-spacing:.12em;font-size:clamp(.85rem,2.6vw,1.1rem);
+    margin-top:8px;
+  }
+
+  .tagline{
+    font-style:italic;font-weight:600;
+    font-size:clamp(1.05rem,3.4vw,1.5rem);
+    margin:30px auto 6px;max-width:30ch;line-height:1.35;
+  }
+  .tagline .hi{color:var(--gold);font-style:italic}
+
+  /* ── Countdown ────────────────────────────── */
+  .soon-label{
+    font-family:'Oswald',sans-serif;font-weight:600;
+    letter-spacing:.3em;text-transform:uppercase;
+    font-size:.78rem;color:#cdd8ee;margin:38px 0 16px;
+  }
+  .countdown{
+    display:flex;justify-content:center;gap:clamp(10px,3.5vw,26px);
+    margin-bottom:36px;flex-wrap:wrap;
+  }
+  .cd-unit{
+    background:rgba(255,255,255,.06);
+    border:1px solid var(--navy-line);
+    border-radius:12px;
+    padding:16px clamp(12px,3.5vw,26px);
+    min-width:86px;
+  }
+  .cd-num{
+    font-family:'Anton',sans-serif;
+    font-size:clamp(2.2rem,7vw,3.4rem);
+    line-height:1;color:#fff;font-variant-numeric:tabular-nums;
+  }
+  .cd-lbl{
+    font-family:'Oswald',sans-serif;font-weight:500;
+    letter-spacing:.18em;text-transform:uppercase;
+    font-size:.62rem;color:var(--gold);margin-top:8px;
+  }
+
+  /* ── Signup ───────────────────────────────── */
+  .signup{max-width:520px;margin:0 auto}
+  .signup h3{
+    font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+    letter-spacing:.06em;font-size:1.15rem;margin-bottom:14px;
+  }
+  .field{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+  .field input{
+    flex:1;min-width:220px;
+    background:#fff;border:none;border-radius:9px;
+    padding:15px 16px;font-family:'Inter',sans-serif;font-size:.97rem;color:var(--ink);
+  }
+  .field input:focus{outline:3px solid var(--gold);outline-offset:1px}
+  .btn{
+    background:var(--red);color:#fff;border:none;border-radius:9px;
+    padding:15px 26px;cursor:pointer;
+    font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.92rem;
+    transition:background .15s, transform .1s;
+  }
+  .btn:hover{background:var(--red-bright)}
+  .btn:active{transform:translateY(1px)}
+  .btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+  .note{font-size:.82rem;color:#aab6d2;margin-top:13px;min-height:1.2em}
+  .note.ok{color:var(--gold);font-weight:500}
+
+  /* ── Values bar ───────────────────────────── */
+  .values{
+    background:var(--red);color:#fff;
+    display:flex;align-items:center;justify-content:center;gap:clamp(14px,4vw,40px);
+    flex-wrap:wrap;text-align:center;
+    font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+    letter-spacing:.1em;font-size:clamp(.78rem,2.2vw,1rem);
+    padding:18px 20px;
+  }
+  .values .star{color:var(--gold)}
+
+  /* ── Sections ─────────────────────────────── */
+  .section{max-width:1040px;margin:0 auto;padding:64px 24px}
+  .eyebrow{
+    font-family:'Oswald',sans-serif;font-weight:600;
+    letter-spacing:.26em;text-transform:uppercase;font-size:.74rem;
+    color:var(--red);margin-bottom:12px;
+  }
+  .h2{
+    font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+    color:var(--navy);font-size:clamp(1.7rem,5vw,2.7rem);line-height:1.05;
+    letter-spacing:.01em;margin-bottom:18px;
+  }
+  .h2 .red{color:var(--red)}
+  .lead{font-size:1.06rem;color:var(--ink);max-width:62ch}
+  .lead .red{color:var(--red);font-weight:600}
+
+  /* pillars */
+  .pillars{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:22px;margin-top:40px;
+  }
+  .pillar{
+    background:var(--paper);
+    border:1px solid #e4e0d4;
+    border-top:5px solid var(--navy);
+    border-radius:12px;padding:26px 24px;
+  }
+  .pillar:nth-child(2){border-top-color:var(--red)}
+  .pillar:nth-child(3){border-top-color:#1F7A4D}
+  .pillar:nth-child(4){border-top-color:var(--navy)}
+  .pillar h4{
+    font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+    color:var(--navy);font-size:1.05rem;line-height:1.15;margin-bottom:14px;letter-spacing:.01em;
+  }
+  .pillar ul{list-style:none}
+  .pillar li{
+    position:relative;padding-left:20px;margin-bottom:10px;font-size:.92rem;color:#41506e;
+  }
+  .pillar li::before{
+    content:"★";position:absolute;left:0;top:0;color:var(--red);font-size:.7rem;line-height:1.6;
+  }
+
+  /* bio band */
+  .band{background:var(--navy);color:#fff}
+  .band .section{padding-top:60px;padding-bottom:60px}
+  .band .eyebrow{color:var(--gold)}
+  .band .h2{color:#fff}
+  .band .h2 .red{color:var(--red-bright)}
+  .band .lead{color:#d6deef}
+  .creds{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:12px 28px;margin-top:30px;
+  }
+  .cred{display:flex;align-items:flex-start;gap:11px;font-size:.95rem;color:#eaf0fb}
+  .cred .chk{
+    flex:none;width:20px;height:20px;border-radius:5px;background:var(--red);
+    color:#fff;display:flex;align-items:center;justify-content:center;font-size:.72rem;margin-top:2px;
+  }
+
+  /* footer */
+  footer{background:var(--navy-deep);color:#fff;text-align:center;padding:48px 24px 30px}
+  .foot-cta{
+    font-family:'Anton',sans-serif;text-transform:uppercase;
+    font-size:clamp(1.6rem,6vw,2.8rem);line-height:1;margin-bottom:6px;
+  }
+  .foot-cta .red{color:var(--red-bright)}
+  .foot-url{
+    font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(1.3rem,5vw,2rem);
+    color:var(--gold);letter-spacing:.02em;margin-bottom:24px;
+  }
+  .foot-tag{
+    font-family:'Oswald',sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.16em;
+    font-size:.82rem;color:#aeb9d4;margin-bottom:6px;
+  }
+  .foot-tag .red{color:var(--red-bright)}
+  .foot-tag .blue{color:#5b8fe0}
+  .disclaimer{
+    margin-top:26px;padding-top:20px;border-top:1px solid #1B3D78;
+    font-size:.72rem;color:#7c89a8;max-width:620px;margin-left:auto;margin-right:auto;line-height:1.5;
+  }
+
+  @media (max-width:560px){
+    .section{padding:48px 22px}
+    .cd-unit{min-width:72px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .stars span{animation:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <span class="star">★</span> Serving those who serve others
+    <span class="star">★</span> Full campaign site launching soon
+    <span class="star">★</span>
+  </div>
+
+  <!-- ── HERO ───────────────────────────────── -->
+  <header class="hero">
+    <div class="stars" id="stars" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="kicker">A First Responder for Congress</p>
+
+      <div class="name anton">
+        <span class="l1">Walter</span>
+        <span class="l2"><span class="q">"</span>Rocky<span class="q">"</span></span>
+        <span class="l3">Beach</span>
+      </div>
+
+      <div class="divider">
+        <span class="rule"></span>
+        <span class="s">★★★</span>
+        <span class="for">For</span>
+        <span class="s">★★★</span>
+        <span class="rule"></span>
+      </div>
+
+      <h1 class="office">U.S. House of Representatives</h1>
+      <p class="district">Louisiana's 2nd Congressional District</p>
+
+      <p class="tagline">"I've lived the call. Now I'm answering <span class="hi">a higher call."</span></p>
+
+      <p class="soon-label">The campaign goes live in</p>
+      <div class="countdown" id="countdown" aria-label="Countdown to launch">
+        <div class="cd-unit"><div class="cd-num" id="d">00</div><div class="cd-lbl">Days</div></div>
+        <div class="cd-unit"><div class="cd-num" id="h">00</div><div class="cd-lbl">Hours</div></div>
+        <div class="cd-unit"><div class="cd-num" id="m">00</div><div class="cd-lbl">Minutes</div></div>
+        <div class="cd-unit"><div class="cd-num" id="s">00</div><div class="cd-lbl">Seconds</div></div>
+      </div>
+
+      <div class="signup">
+        <h3>Join the movement</h3>
+        <div class="field">
+          <input type="email" id="email" placeholder="Enter your email" aria-label="Email address" autocomplete="email">
+          <button class="btn" id="join">Count me in</button>
+        </div>
+        <p class="note" id="note">Be the first to know when we launch. We'll never share your information.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── VALUES BAR ─────────────────────────── -->
+  <div class="values">
+    <span><span class="star">★</span> Put Patients First</span>
+    <span><span class="star">★</span> Support First Responders</span>
+    <span><span class="star">★</span> Demand Accountability</span>
+  </div>
+
+  <!-- ── PILLARS ────────────────────────────── -->
+  <section class="section">
+    <p class="eyebrow">Reform · Accountability · Results</p>
+    <h2 class="h2">What we're <span class="red">fighting for</span></h2>
+    <p class="lead">As an EMS advocate and reform leader, I've spent years fighting for EMTs, paramedics, patients, and taxpayers. <span class="red">Now, I'm taking that fight to Washington.</span></p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <h4>Strengthen EMS as Essential Healthcare</h4>
+        <ul>
+          <li>Recognize EMS as a vital part of our healthcare system.</li>
+          <li>Increase support for EMT and paramedic recruitment and retention.</li>
+          <li>Invest in emergency response infrastructure that saves lives and taxpayer dollars.</li>
+        </ul>
+      </div>
+      <div class="pillar">
+        <h4>Protect EMTs and Paramedics</h4>
+        <ul>
+          <li>Fight for competitive municipal and state pay for EMS professionals.</li>
+          <li>Support civil service protections for EMTs and paramedics.</li>
+          <li>Ensure first responders have the resources and protections they deserve.</li>
+        </ul>
+      </div>
+      <div class="pillar">
+        <h4>End Ambulance Monopolies</h4>
+        <ul>
+          <li>Protect patient choice in ambulance services, especially for bed-confined patients.</li>
+          <li>Promote competition, transparency, and accountability in emergency medical transportation.</li>
+          <li>Fight to remove monopoly protections that limit patient options and innovation.</li>
+        </ul>
+      </div>
+      <div class="pillar">
+        <h4>Bring Louisiana's Voice to Washington</h4>
+        <ul>
+          <li>Advocate for policies that improve emergency care and public safety.</li>
+          <li>Deliver practical solutions instead of partisan politics.</li>
+          <li>Ensure Louisiana's first responders and working families have a voice in Congress.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BIO BAND ───────────────────────────── -->
+  <div class="band">
+    <section class="section">
+      <p class="eyebrow">Why I'm running</p>
+      <h2 class="h2">A lifetime of service.<br><span class="red">A future of reform.</span></h2>
+      <p class="lead">I've seen firsthand what works — and what doesn't — in emergency medicine. I believe government should serve the people, reward innovation, and be accountable to taxpayers. Now I'm taking that fight to Washington to deliver real results for Louisiana and our first responders.</p>
+
+      <div class="creds">
+        <div class="cred"><span class="chk">✓</span> Co-Founder of EMS REFORM</div>
+        <div class="cred"><span class="chk">✓</span> Decades of service as a paramedic</div>
+        <div class="cred"><span class="chk">✓</span> Advocated for EMS funding and reform</div>
+        <div class="cred"><span class="chk">✓</span> Champion for civil service protections</div>
+        <div class="cred"><span class="chk">✓</span> Fought for patient choice and competition</div>
+        <div class="cred"><span class="chk">✓</span> Raised awareness of EMS workforce issues</div>
+        <div class="cred"><span class="chk">✓</span> EMS on the Hill Day — 2024, 2025 &amp; 2026</div>
+        <div class="cred"><span class="chk">✓</span> Representing all or portions of 11+ parishes</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────── -->
+  <footer>
+    <div class="foot-cta anton">Join the <span class="red">movement!</span></div>
+    <div class="foot-url">voteforrocky.com</div>
+    <p class="foot-tag">Serving those who serve others</p>
+    <p class="foot-tag">For Safer Communities · <span class="blue">Stronger EMS</span> · <span class="red">Better Government</span></p>
+
+    <p class="disclaimer">
+      Paid for by [Your Authorized Campaign Committee]. — Replace this line with your FEC-required
+      authorization/disclaimer before the site goes live. This page is a launch placeholder; the
+      full campaign site is coming soon.
+    </p>
+  </footer>
+
+<script>
+  // ── Launch date: 4 days from now ─────────────────
+  const LAUNCH = new Date(Date.now() + 4 * 24 * 60 * 60 * 1000);
+  // ──────────────────────────────────────────────────
+
+  const pad = n => String(n).padStart(2,'0');
+  function tick(){
+    const diff = LAUNCH - new Date();
+    if (diff <= 0){ ['d','h','m','s'].forEach(i=>document.getElementById(i).textContent='00'); return; }
+    const s = Math.floor(diff/1000);
+    document.getElementById('d').textContent = pad(Math.floor(s/86400));
+    document.getElementById('h').textContent = pad(Math.floor(s%86400/3600));
+    document.getElementById('m').textContent = pad(Math.floor(s%3600/60));
+    document.getElementById('s').textContent = pad(s%60);
+  }
+  tick(); setInterval(tick,1000);
+
+  // Stars
+  const field = document.getElementById('stars');
+  for (let i=0;i<40;i++){
+    const st = document.createElement('span');
+    st.textContent = '★';
+    st.style.left = Math.random()*100 + '%';
+    st.style.top = Math.random()*100 + '%';
+    st.style.fontSize = (7 + Math.random()*7) + 'px';
+    st.style.animationDelay = Math.random()*5 + 's';
+    field.appendChild(st);
+  }
+
+  // ── Signup: submissions are delivered to the campaign inbox via FormSubmit ──
+  // First real submission triggers a one-time activation email to that address.
+  const INBOX = 'voteforrocky@voteforrocky.com';
+  const ENDPOINT = 'https://formsubmit.co/ajax/' + INBOX;
+
+  const note = document.getElementById('note');
+  const email = document.getElementById('email');
+  const joinBtn = document.getElementById('join');
+
+  async function join(){
+    const v = email.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){
+      note.textContent = 'Please enter a valid email address.';
+      note.classList.remove('ok');
+      return;
+    }
+
+    joinBtn.disabled = true;
+    note.classList.remove('ok');
+    note.textContent = 'Submitting…';
+
+    try {
+      const res = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          email: v,
+          _subject: 'New supporter signup — voteforrocky.com',
+          _template: 'table',
+          _captcha: 'false'
+        })
+      });
+      if (!res.ok) throw new Error('bad response');
+      note.textContent = "You're in. Thank you for joining the movement!";
+      note.classList.add('ok');
+      email.value = '';
+    } catch (err) {
+      note.textContent = "Sorry, something went wrong. Please email us at " + INBOX + ".";
+    } finally {
+      joinBtn.disabled = false;
+    }
+  }
+
+  joinBtn.addEventListener('click', join);
+  email.addEventListener('keydown', e => { if (e.key === 'Enter') join(); });
+</script>
+</body>
+</html>
